@@ -1,0 +1,103 @@
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.dll.config
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Static.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.VM.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\AutoMapper.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.dll.config
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.Static.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\App.VM.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\AutoMapper.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\bin\Debug\ar\App.Static.resources.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csprojAssemblyReference.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.CoreCompileInputs.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.CopyComplete
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.dll.config
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Static.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.VM.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.SqlServer.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Newtonsoft.Json.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.dll.config
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Static.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.VM.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.SqlServer.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\ar\App.Static.resources.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.AssemblyReference.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.CoreCompileInputs.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.CopyComplete
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.dll.config
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Service.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Static.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.VM.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.SqlServer.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Newtonsoft.Json.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Dal.dll.config
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.Static.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\App.VM.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\EntityFramework.SqlServer.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\bin\Debug\ar\App.Static.resources.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.AssemblyReference.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.CoreCompileInputs.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.csproj.CopyComplete
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Service\obj\Debug\App.Service.pdb
+D:\website 2\Website\App.Service\bin\Debug\App.Service.dll.config
+D:\website 2\Website\App.Service\bin\Debug\App.Service.dll
+D:\website 2\Website\App.Service\bin\Debug\App.Service.pdb
+D:\website 2\Website\App.Service\bin\Debug\App.Dal.dll
+D:\website 2\Website\App.Service\bin\Debug\App.Static.dll
+D:\website 2\Website\App.Service\bin\Debug\App.VM.dll
+D:\website 2\Website\App.Service\bin\Debug\EntityFramework.dll
+D:\website 2\Website\App.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\website 2\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\website 2\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\website 2\Website\App.Service\bin\Debug\Newtonsoft.Json.dll
+D:\website 2\Website\App.Service\bin\Debug\System.Net.Http.Formatting.dll
+D:\website 2\Website\App.Service\bin\Debug\App.Dal.pdb
+D:\website 2\Website\App.Service\bin\Debug\App.Dal.dll.config
+D:\website 2\Website\App.Service\bin\Debug\App.Static.pdb
+D:\website 2\Website\App.Service\bin\Debug\App.VM.pdb
+D:\website 2\Website\App.Service\bin\Debug\EntityFramework.xml
+D:\website 2\Website\App.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\website 2\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\website 2\Website\App.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\website 2\Website\App.Service\bin\Debug\ar\App.Static.resources.dll
+D:\website 2\Website\App.Service\obj\Debug\App.Service.csproj.AssemblyReference.cache
+D:\website 2\Website\App.Service\obj\Debug\App.Service.csproj.CoreCompileInputs.cache
+D:\website 2\Website\App.Service\obj\Debug\App.Service.csproj.CopyComplete
+D:\website 2\Website\App.Service\obj\Debug\App.Service.dll
+D:\website 2\Website\App.Service\obj\Debug\App.Service.pdb

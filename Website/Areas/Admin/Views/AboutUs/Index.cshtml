@@ -1,0 +1,179 @@
+﻿@using App.Static.Resources
+
+@{
+    ViewBag.Title = Resource.About;
+    Layout = "~/Areas/Admin/Views/Shared/_AdminPanelLayout.cshtml";
+}
+
+@section styles{
+    <style>
+        .pip img {
+            max-width: 100%;
+        }
+    </style>
+}
+
+
+<!-- Modal -->
+<div id="DeleteConfirmedModal" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog rounded" role="document">
+        <div class="modal-content">
+            <header class="modal-header flex-column justify-content-center border-0 mb-0">
+                <h4 id="deleteModalLabel" class="modal-title mx-auto">@Resource.DeleteConfirmed</h4>
+            </header>
+            <div class="modal-body pt-3 text-center">
+            </div>
+            <footer class="modal-footer justify-content-center border-0">
+                <button type="button" class="btn btn-danger " onclick="DeleteConfirmed()">@Resource.Delete</button>
+                <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+            </footer>
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
+<!-- Modal -->
+<div id="exampleModal" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg Custom_modal rounded" role="document">
+        <div class="modal-content">
+            <header class="modal-header flex-column justify-content-center border-0 mb-0">
+                <h4 id="addleModalLabel" class="modal-title mx-auto">@Resource.Add</h4>
+            </header>
+            <div class="modal-body pt-3 text-center" id="AddContent"></div>
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
+
+<table class="table text-nowrap mb-0" id="example">
+    <thead>
+        <tr>
+            <th class="font-weight-semi-bold border-top-0 py-2">#</th>
+            <th class="font-weight-semi-bold border-top-0 py-2">@Resource.ArTitel</th>
+            <th class="font-weight-semi-bold border-top-0 py-2">@Resource.EnTitel</th>
+            <th class="font-weight-semi-bold border-top-0 py-2">@Resource.ArDescription</th>
+            <th class="font-weight-semi-bold border-top-0 py-2">@Resource.ENDescription</th>
+            <th class="font-weight-semi-bold border-top-0 py-2">@Resource.Images</th>
+            <th></th>
+        </tr>
+    </thead>
+</table>
+
+@section scripts{
+    <script>
+        var DATATABLE = "";
+        $(document).ready(function () {
+            DATATABLE = $('#example').DataTable({
+                "ajax": {
+                    'url': "@Url.Action("GettAll", "AboutUs")",
+                    'type': "GET"
+                },
+                "columns": [
+                    {
+                        "data": null, "render": function (data, type, full, meta) {
+                            return meta.row + 1;
+                        }
+                    },
+                    { "data":  "ArTitel"},
+                    { "data":  "EnTitel"},
+                    { "data":  "ArDescription"},
+                    { "data":  "EnDescription"},
+                    {
+                        "data": "Image", "render": function (data, type, row, meta) {
+                            return `<botton  onclick='PreviewImages(" ${data}")' class='btn btn-light'><i class='fa fa-eye'></i></botton>`;
+                        }
+                    },
+                    {
+                        "data": "Id", "render": function (data, type, row, meta) {
+                            return "<botton class='btnControl btn btn-warning mr-1' onclick='GetByID(" + data + ")'><i class='gd-pencil'></i></botton>"
+                                + "<botton class='btnControl btn btn-danger' onclick='_DeleteRow(" + data + ")'><i class='gd-trash'></i></botton>"
+                        }
+                    },
+                ],
+                info: false,
+
+            })
+            DATATABLE.on('order.dt search.dt', function () {
+                DATATABLE.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+                    cell.innerHTML = i + 1;
+                });
+            }).draw();
+        });
+
+
+        function Save() {
+            var dataVal = $("#form").serializeArray();
+            var formData = new FormData();
+            var fileInput = document.getElementById('files');
+            //Iterating through each files selected in fileInput
+            for (i = 0; i < fileInput.files.length; i++) {
+
+                var sfilename = fileInput.files[i].name;
+                let srandomid = Math.random().toString(36).substring(7);
+                formData.append(sfilename, fileInput.files[i]);
+            }
+            formData.append('Image', $('#files').val());
+            for (var i = 0; i < dataVal.length; i++) {
+                formData.append(dataVal[i].name, dataVal[i].value);
+            }
+            $.ajax({
+                url: "@Url.Action("Create", "AboutUs", new { area = "Admin" })",
+                data: formData,
+                type: 'POST',
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    if (data.Status) {
+                        toastr.success('@Resource.SaveSucc', "", { timeOut: 4000 });
+                        DATATABLE.ajax.reload();
+                    } else {
+                        toastr.error('@Resource.Error', "", { timeOut: 4000 });
+                    }
+                    $("#exampleModal").modal('hide');
+                }
+            });
+            return false;
+        }
+
+        $("#AddNew").click(function () {
+            $("#exampleModal").modal('show');
+            $('#AddContent').load('@Url.Action("Create", "AboutUs", new { area = "Admin" })');
+            $('#addleModalLabel').text('@Resource.Add');
+
+        })
+
+        function GetByID(id) {
+            $("#exampleModal").modal('show');
+            let url = '@Url.Action("Details", "AboutUs", new { area = "Admin"})/' + id;
+            $('#AddContent').load(url, function () {
+                $('#files').prop('required', false)
+            });
+            $('#addleModalLabel').text('@Resource.Edit');
+        }
+
+        var DeleteID = 0;
+        function _DeleteRow(id) {
+            DeleteID = id;
+            $("#DeleteConfirmedModal").modal('show');
+        }
+
+        function DeleteConfirmed(id = DeleteID) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("Delete", "AboutUs", new { area = "Admin" })",
+                data: {id},
+                success: function (response) {
+                    if (response.Status) {
+                        DATATABLE.ajax.reload();
+                        $("#DeleteConfirmedModal").modal('hide');
+                        toastr.success('@Resource.DeletedSucc', "", { timeOut: 4000 });
+                    }
+                    else {
+                        toastr.error('@Resource.Error', "", { timeOut: 4000 });
+                    }
+                }
+            });
+        }
+
+
+    </script>
+}

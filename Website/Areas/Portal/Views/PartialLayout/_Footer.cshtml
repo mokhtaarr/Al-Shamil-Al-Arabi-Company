@@ -1,0 +1,65 @@
+﻿@using App.Static.Resources
+@model App.VM.ContactUsVM
+@{
+    Layout = null;
+}
+<style>
+    span.text-danger.field-validation-error {
+        position: absolute;
+        top: 48px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #footer .footer-top .footer-newsletter form input[type="email"] {
+        outline: none;
+    }
+</style>
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top">
+
+        <div class="container" data-aos="fade-up">
+
+            @*<div class="row  justify-content-center">
+                    <div class="col-lg-6">
+                        <h3>Bocor</h3>
+                        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+                    </div>
+                </div>*@
+
+            <div class="row footer-newsletter justify-content-center">
+                <div class="col-lg-6">
+                    <form id="subscribedForm">
+                        @Html.EditorFor(model => model.EmailSubscribed, new { htmlAttributes = new { type = "email", placeholder = Resource.EmailPlaceHolder } })
+                        @Html.ValidationMessageFor(model => model.EmailSubscribed, "", new { @class = "text-danger" })
+
+                        @*<input type="email" name="EmailSubscribed" placeholder="@Resource.EmailPlaceHolder">*@
+                        <input type="submit" id="tes" value="@Resource.Subscribe">
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="@Model.twitter" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="@Model.facebook" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="@Model.instagram" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="@Model.skype" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="@Model.linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a class="linkedin">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container footer-bottom clearfix d-flex justify-content-center">
+        <div class="copyright text-center">
+            Copyright &copy; 2021 All Rights Reserved.
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="javascript:void(0)" class="back-to-top"><i class="icofont-simple-up"></i></a>

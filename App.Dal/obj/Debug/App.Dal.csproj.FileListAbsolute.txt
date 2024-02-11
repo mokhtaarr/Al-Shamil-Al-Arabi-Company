@@ -1,0 +1,96 @@
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.dll.config
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\bin\Debug\EntityFramework.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\bin\Debug\EntityFramework.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csprojAssemblyReference.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.newTables.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.EditCategory.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.EditCategory1.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.EditCategory2.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.EditTables.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.EditTables1.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.EditTables2.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.UserSubscribed.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.UserSubscribed1.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.UserSubscribed2.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.UserSubscribed3.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.users.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.tst.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.hj.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.hj1.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.editContactus.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.GenerateResource.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.CoreCompileInputs.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.CopyComplete
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.dll.config
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Static.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\EntityFramework.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Static.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\EntityFramework.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\ar\App.Static.resources.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.AssemblyReference.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase1.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase2.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase3.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase4.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase11.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase12.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.LogosTechnology.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.GenerateResource.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.CoreCompileInputs.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.CopyComplete
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.addcategorycontenttableandeditcategorytable.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.dll.config
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Dal.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Static.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\EntityFramework.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\App.Static.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\EntityFramework.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\bin\Debug\ar\App.Static.resources.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.AssemblyReference.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase1.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase2.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase3.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase4.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase11.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase12.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.LogosTechnology.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.Migrations.addcategorycontenttableandeditcategorytable.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.GenerateResource.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.CoreCompileInputs.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.csproj.CopyComplete
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Dal\obj\Debug\App.Dal.pdb
+D:\website 2\Website\App.Dal\bin\Debug\App.Dal.dll.config
+D:\website 2\Website\App.Dal\bin\Debug\App.Dal.dll
+D:\website 2\Website\App.Dal\bin\Debug\App.Dal.pdb
+D:\website 2\Website\App.Dal\bin\Debug\App.Static.dll
+D:\website 2\Website\App.Dal\bin\Debug\EntityFramework.dll
+D:\website 2\Website\App.Dal\bin\Debug\App.Static.pdb
+D:\website 2\Website\App.Dal\bin\Debug\EntityFramework.xml
+D:\website 2\Website\App.Dal\bin\Debug\ar\App.Static.resources.dll
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.csproj.AssemblyReference.cache
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase1.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase2.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase3.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase4.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase11.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.intialDatabase12.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.LogosTechnology.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.Migrations.addcategorycontenttableandeditcategorytable.resources
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.csproj.GenerateResource.cache
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.csproj.CoreCompileInputs.cache
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.csproj.CopyComplete
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.dll
+D:\website 2\Website\App.Dal\obj\Debug\App.Dal.pdb

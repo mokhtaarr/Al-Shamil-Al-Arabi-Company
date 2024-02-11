@@ -1,0 +1,118 @@
+﻿@model App.Dal.Model.TeamMembers
+@using App.Static.Resources
+
+<form id="form">
+    <div class="row">
+        @Html.HiddenFor(model => model.Id)
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.ArName, new { htmlAttributes = new { @class = "form-control", required = true, placeholder = Resource.ArName } })
+                @Html.ValidationMessageFor(model => model.ArName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.EnName, new { htmlAttributes = new { @class = "form-control", required = true, placeholder = Resource.EnName } })
+                @Html.ValidationMessageFor(model => model.EnName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.ArJob, new { htmlAttributes = new { @class = "form-control", required = true, placeholder = Resource.ArJob } })
+                @Html.ValidationMessageFor(model => model.ArJob, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.EnJob, new { htmlAttributes = new { @class = "form-control", required = true, placeholder = Resource.EnJob } })
+                @Html.ValidationMessageFor(model => model.EnJob, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.twitter, new { htmlAttributes = new { @class = "form-control", placeholder = "twitter" } })
+                @Html.ValidationMessageFor(model => model.twitter, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.facebook, new { htmlAttributes = new { @class = "form-control", placeholder = "facebook" } })
+                @Html.ValidationMessageFor(model => model.facebook, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.instagram, new { htmlAttributes = new { @class = "form-control", placeholder = "instagram" } })
+                @Html.ValidationMessageFor(model => model.instagram, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.EditorFor(model => model.linkedin, new { htmlAttributes = new { @class = "form-control", placeholder = "linkedIn" } })
+                @Html.ValidationMessageFor(model => model.linkedin, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.DropDownList("TeamID", new SelectList(ViewBag.Team, "Id", "Text"), Resource.ChooseDrop, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <input class="form-control" type="file" name="upload" id="files" value="" required />
+        </div>
+
+        <hr class="form-group col-md-12" id="test" />
+    </div>
+    <footer class="modal-footer justify-content-center border-0">
+        <button type="submit" class="btn btn-primary " id="saveBtn">@Resource.SaveBTN</button>
+        <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+    </footer>
+</form>
+
+<script>
+    $(document).ready(function () {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#files").on("change", function (e) {
+                $(".pip").remove();
+                var files = e.target.files,
+                    filesLength = files.length;
+                for (var i = 0; i < filesLength; i++) {
+                    var f = files[i]
+                    var fileReader = new FileReader();
+                    fileReader.onload = (function (e) {
+                        var file = e.target;
+                        $("<div class=\"pip col-3\">" +
+                            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                            "</div>").insertAfter("#test");
+                    });
+                    fileReader.readAsDataURL(f);
+                }
+            });
+        } else {
+            alert("Your browser doesn't support to File API")
+        }
+    });
+
+    $("#saveBtn").click(function () {
+        let text = $('#addleModalLabel').text();
+        if (text == '@Resource.Edit')
+            $("#files").prop('required', false);
+        else
+            $("#files").prop('required', true);
+
+        if ($("#form").valid()) {
+            Save()
+        }
+    })
+
+    $("#form").submit(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    })
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

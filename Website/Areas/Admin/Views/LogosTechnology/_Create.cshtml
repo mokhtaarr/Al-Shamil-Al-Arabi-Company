@@ -1,0 +1,85 @@
+﻿@model App.VM.LogosTechnologyVM
+@using App.Static.Resources
+
+@{
+    int sort = ViewBag.sort == null ? 0 : (int)ViewBag.sort;
+    Layout = null;
+}
+<form id="form">
+    <div class="row">
+        @Html.HiddenFor(model => model.Id)
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-6">
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Sort, new { @class = "form-control", required = true, placeholder = Resource.Sort1, autocomplete = "off" })
+                <span id="Sort-error" style="display:none;" class="text-danger">@Resource.sortIsExist</span>
+                @*@Html.EditorFor(model => model.Sort, new { htmlAttributes = new { @class = "form-control", placeholder = Resource.Sort1, autocomplete = "Off" } })
+                    @Html.ValidationMessageFor(model => model.Sort, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <input class="form-control" type="file" name="upload" id="files" value="" required />
+        </div>
+
+        <hr class="form-group col-md-12" id="test" />
+    </div>
+    <footer class="modal-footer justify-content-center border-0">
+        <button type="submit" class="btn btn-primary " id="saveBtn">@Resource.SaveBTN</button>
+        <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+    </footer>
+</form>
+
+<script>
+    $('#Sort').change(function () {
+        let val = $(this).val(),
+            url = $(this).attr('data-val-remote-url')
+        id = isNaN(parseInt($('#Id').val())) ? 0 : parseInt($('#Id').val());
+        IsSortExist(val, url, id);
+    });
+
+    if(@sort != 0)
+        $("#Sort").val(@sort)
+
+    $(document).ready(function () {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#files").on("change", function (e) {
+                $(".pip").remove();
+                var files = e.target.files,
+                    filesLength = files.length;
+                for (var i = 0; i < filesLength; i++) {
+                    var f = files[i]
+                    var fileReader = new FileReader();
+                    fileReader.onload = (function (e) {
+                        var file = e.target;
+                        $("<div class=\"pip col-3\">" +
+                            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                            "</div>").insertAfter("#test");
+                    });
+                    fileReader.readAsDataURL(f);
+                }
+            });
+        } else {
+            alert("Your browser doesn't support to File API")
+        }
+    });
+
+    $("#saveBtn").click(function () {
+        let text = $('#addleModalLabel').text();
+        if (text == '@Resource.Edit')
+            $("#files").prop('required', false);
+        else
+            $("#files").prop('required', true);
+
+        if ($("#form").valid()) {
+            if ($('#Sort-error').is(":visible "))
+                toastr.error('@Resource.sortIsExist', "", { timeOut: 4000 });
+            else
+                Save();
+        }
+    })
+
+    $("#form").submit(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    })
+</script>

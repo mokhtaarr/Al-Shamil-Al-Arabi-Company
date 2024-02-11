@@ -1,0 +1,163 @@
+﻿@model App.VM.CategoryVM
+@using App.Dal.Model;
+@using App.Static.Resources
+
+@{
+    bool res = Model == null ? true : false;
+    int sort = ViewBag.sort == null ? 0 : (int)ViewBag.sort;
+    List<CategoryCnotent> CategoryCnotents = ViewBag.CategoryCnotent as List<CategoryCnotent>;
+    int CatNumber = CategoryCnotents != null ? CategoryCnotents.Count() : 0;
+    Layout = null;
+}
+
+<form id="form">
+    @Html.HiddenFor(x => x.Id)
+    <div class="row" id="test">
+        <div class="form-group col-md-6">
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.ArName, new { @class = "form-control", required = true, placeholder = Resource.ArName })
+                @Html.ValidationMessageFor(model => model.ArName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.EnName, new { @class = "form-control", required = true, placeholder = Resource.EnName })
+                @Html.ValidationMessageFor(model => model.EnName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="CKContent" class="form-group col-12">
+
+            @if (CategoryCnotents != null)
+            {
+                for (int i = 0; i < CatNumber; i++)
+                {
+                    int num = i + 1;
+                    <input type="hidden" id="CategoryCnotentsId@(num)" name="CategoryCnotentsId@(num)" value="@CategoryCnotents[i].Id" />
+                    <div class="form-group col-12">
+                        <div class="col-12">
+                            <textarea class="CKEDITOR" id="ArContent@(num)" name="ArContent@(num)" required>@CategoryCnotents[i].ArContent</textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <div class="col-12">
+                            <textarea id="EnContent@(num)" name="EnContent@(num)" required>@CategoryCnotents[i].EnContent</textarea>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="form-group col-12">
+                    <div class="col-12">
+                        <textarea class="form-control CKEDITOR" id="ArContent1" name="ArContent1" placeholder="@Resource.ArContent" required>@Resource.ArContent</textarea>
+                        <script>CKEDITOR.replace('ArContent1');</script>
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <div class="col-12">
+                        <textarea class="form-control" id="EnContent1" name="EnContent1" placeholder="@Resource.EnContent" required>@Resource.EnContent</textarea>
+                        <script>CKEDITOR.replace('EnContent1');</script>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+        <div class="form-group col-12">
+            <button class="btn btn-outline-info col-md-6" id="AddMoreContent">@Resource.AddMore</button>
+        </div>
+
+        <div class="form-group col-md-8">
+            <div class="col-12">
+                @Html.DropDownList("categoryId", new SelectList(ViewBag.Categories, "Id", "Name"), Resource.ChooseDrop, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-4 row">
+            @*<span class="col-md-6 control-label">@Resource.Sort</span>*@
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Sort, new { @class = "form-control", required = true, placeholder = Resource.Sort, autocomplete = "off" })
+                <span id="Sort-error" style="display:none;" class="text-danger">@Resource.sortIsExist</span>
+                @*@Html.EditorFor(m => m.Sort, new { HtmlAttributes = new { @class = "form-control", required = true, placeholder = Resource.Sort } })*@
+                @Html.ValidationMessageFor(model => model.Sort, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <footer class="modal-footer justify-content-center border-0">
+        <button type="submit" class="btn btn-primary " id="saveBtn">@Resource.SaveBTN</button>
+        <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+    </footer>
+</form>
+
+<script>
+    $('#AddMoreContent').on('click', function (e) {
+        debugger
+        e.preventDefault();
+        AddContent();
+    })
+
+    function AddContent() {
+        let lastCount = $('.CKEDITOR').length + 1;
+        let tem = `<div class="form-group col-12">
+            <div class="col-12">
+                <textarea class="form-control CKEDITOR" id="ArContent${lastCount}" name="ArContent${lastCount}" placeholder="@Resource.ArContent" required>@Resource.ArContent</textarea>
+                <script>CKEDITOR.replace('ArContent${lastCount}');${'</'}script>
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                <textarea class="form-control" id="EnContent${lastCount}" name="EnContent${lastCount}" placeholder="@Resource.EnContent" required>@Resource.EnContent</textarea>
+                <script>CKEDITOR.replace('EnContent${lastCount}');${'</'}script>
+            </div>
+        </div>`;
+        $('#CKContent').append(tem);
+    }
+
+    $('#Sort').change(function () {
+        let val = $(this).val(),
+            url = $(this).attr('data-val-remote-url')
+            id = isNaN(parseInt($('#Id').val())) ? 0 : parseInt($('#Id').val());
+
+        IsSortExist(val, url, id);
+    })
+
+    if(@sort != 0)
+    $("#Sort").val(@sort)
+
+    @*if ('@res' == 'True') {
+        CKEDITOR.instances.ArContent1.setData("@Resource.ArContent");
+        CKEDITOR.instances.EnContent1.setData("@Resource.EnContent");
+    }*@ 
+
+    for (var i = 1; i <= @CatNumber; i++) {
+        CKEDITOR.replace('ArContent' + i)
+        CKEDITOR.replace('EnContent' + i)
+    }
+
+    //$("#categoryId option:first-child").attr('disabled',"disabled")
+
+    $("#saveBtn").click(function (e) {
+        //debugger
+        e.preventDefault();
+        if ($("#form").valid()) {
+            if ($('#Sort-error').is(":visible "))
+                toastr.error('@Resource.sortIsExist', "", { timeOut: 4000 });
+            else
+                Save();
+        }
+    });
+
+    $(document).on('keypress', function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            if ($("#form").valid()) {
+                if ($('#Sort-error').is(":visible "))
+                    toastr.error('@Resource.sortIsExist', "", { timeOut: 4000 });
+                else
+                    Save();
+            }
+        }
+    });
+</script>

@@ -1,0 +1,48 @@
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\bin\Debug\App.Static.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\bin\Debug\App.Static.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\bin\Debug\ar\App.Static.resources.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csprojAssemblyReference.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.Resources.Resource.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.Resources.Resource.ar.resources
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.GenerateResource.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.CoreCompileInputs.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\ar\App.Static.resources.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.CopyComplete
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\bin\Debug\App.Static.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\bin\Debug\App.Static.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\bin\Debug\ar\App.Static.resources.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.AssemblyReference.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.Resources.Resource.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.Resources.Resource.ar.resources
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.GenerateResource.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.CoreCompileInputs.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\ar\App.Static.resources.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.CopyComplete
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\bin\Debug\App.Static.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\bin\Debug\App.Static.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\bin\Debug\ar\App.Static.resources.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.AssemblyReference.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.Resources.Resource.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.Resources.Resource.ar.resources
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.GenerateResource.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.CoreCompileInputs.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\ar\App.Static.resources.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.csproj.CopyComplete
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.Static\obj\Debug\App.Static.pdb
+D:\website 2\Website\App.Static\bin\Debug\App.Static.dll
+D:\website 2\Website\App.Static\bin\Debug\App.Static.pdb
+D:\website 2\Website\App.Static\bin\Debug\ar\App.Static.resources.dll
+D:\website 2\Website\App.Static\obj\Debug\App.Static.csproj.AssemblyReference.cache
+D:\website 2\Website\App.Static\obj\Debug\App.Static.Resources.Resource.resources
+D:\website 2\Website\App.Static\obj\Debug\App.Static.Resources.Resource.ar.resources
+D:\website 2\Website\App.Static\obj\Debug\App.Static.csproj.GenerateResource.cache
+D:\website 2\Website\App.Static\obj\Debug\App.Static.csproj.CoreCompileInputs.cache
+D:\website 2\Website\App.Static\obj\Debug\ar\App.Static.resources.dll
+D:\website 2\Website\App.Static\obj\Debug\App.Static.csproj.CopyComplete
+D:\website 2\Website\App.Static\obj\Debug\App.Static.dll
+D:\website 2\Website\App.Static\obj\Debug\App.Static.pdb

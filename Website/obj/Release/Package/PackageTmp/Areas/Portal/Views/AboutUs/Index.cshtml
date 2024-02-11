@@ -1,0 +1,63 @@
+﻿@model IEnumerable<App.Dal.Model.AboutUs>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ArTitel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnTitel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArTitel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnTitel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

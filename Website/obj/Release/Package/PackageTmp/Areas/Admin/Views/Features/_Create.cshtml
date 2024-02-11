@@ -1,0 +1,44 @@
+﻿@model App.Dal.Model.Features
+@using App.Static.Resources
+
+<form id="form">
+    <div class="row">
+        @Html.HiddenFor(model => model.Id)
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.TextAreaFor(model => model.ArDescription, new { @class = "form-control", required = true, placeholder = Resource.ArDescription })
+                @Html.ValidationMessageFor(model => model.ArDescription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.TextAreaFor(model => model.EnDescription, new { @class = "form-control", required = true, placeholder = Resource.ENDescription })
+                @Html.ValidationMessageFor(model => model.EnDescription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <footer class="modal-footer justify-content-center border-0">
+        <button type="submit" class="btn btn-primary " id="saveBtn">@Resource.SaveBTN</button>
+        <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+    </footer>
+</form>
+
+<script>
+    $("#saveBtn").click(function () {
+        if ($("#form").valid()) {
+            Save()
+        }
+    })
+
+    $("#form").submit(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    })
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

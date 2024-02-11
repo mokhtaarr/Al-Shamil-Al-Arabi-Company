@@ -1,0 +1,148 @@
+@font-face {
+    font-family: DroidKuf;
+    src: url("../../../../fonts/DroidKufi-Regular.ttf");
+}
+*,html, body{
+    direction: rtl;
+    font-family: "DroidKuf" !important;
+}
+.mr-auto, .mx-auto {
+  margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+  margin-right: unset!important;
+}
+.nav-menu > ul > li{
+  float: right;
+}
+.col-lg-6.py-5.py-lg-0.order-2.order-lg-1.aos-init.aos-animate,.col-xl-7.pl-0.pl-lg-5.pr-lg-1.d-flex.align-items-stretch,
+.col-md-7.pt-4.aos-init.aos-animate,.col-md-7.pt-5.order-2.order-md-1.aos-init.aos-animate,.col-md-7.pt-5.aos-init.aos-animate,
+.col-md-7.pt-5.order-2.order-md-1.aos-init.aos-animate {
+  text-align: right;
+}
+@media (min-width: 992px){
+  .pl-lg-5, .px-lg-5 {
+      padding-right: 3rem!important;
+      padding-left: .25rem!important;
+  }
+}
+
+.about .content .icon-box p,.about .content .icon-box h4{
+  margin-right: 60px;
+  margin-left: unset;
+}
+.about .content .icon-box i{
+  float: right;
+}
+.card-text,.read-more{
+  text-align: right;
+}
+.services .read-more a{
+  display: inline-flex;
+  align-items: center;
+}
+.services .read-more a i.icofont-arrow-right{
+  transform: rotateY(180deg);
+}
+.features .content ul i{
+  padding-left: 4px;
+  padding-right: unset;
+  float: right;
+}
+.validate {
+    text-align: right;
+}
+.nav-menu .drop-down > a:after {
+    padding-right: 5px;
+    padding-left: unset;
+}
+
+@media (max-width: 992px) {
+    .logo.mr-auto {
+        margin-right: auto !important;
+        margin-left: unset !important;
+    }
+}
+/*////////////// Start Admin Css /////////////////*/
+@media (min-width: 992px) {
+    .main {
+        padding-left: unset !important;
+        padding-right: 15.63rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body.has-sidebar.side-nav-closed .main, body.has-sidebar.side-nav-minified .main {
+        padding-left: unset !important;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    aside#sidebar {
+        right: 0;
+        z-index: 99;
+        visibility: visible;
+    }
+}
+
+div#example_length {
+    text-align: right;
+}
+
+div#example_filter {
+    text-align: left;
+}
+.side-nav-menu-top-level {
+    padding-right: 0;
+}
+.side-nav {
+    left: unset !important;
+}
+body.side-nav-hidden:not(.side-nav-mini-mode) .side-nav {
+    right: -15.63rem;
+}
+.unfold-user {
+    margin-left: 3rem;
+    padding-right: 0;
+    padding-left: 6px;
+}
+@media (min-width: 768px) {
+    .mr-md-2, .mx-md-2 {
+        margin-left: .5rem !important;
+    }
+}
+.ml-2, .mx-2 {
+    margin-right: .5rem !important;
+    margin-left: unset !important;
+}
+.mr-3, .mx-3 {
+    margin-left: 1rem !important;
+    margin-right: unset !important;
+}
+.mr-1, .mx-1 {
+    margin-left: .25rem !important;
+}
+span.side-nav-fadeout-on-closed.media-body {
+    text-align: right;
+}
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+}
+#hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+}
+#hero p {
+    font-size: 17px;
+}
+.nav-menu .drop-down ul a {
+    text-align: right;
+}
+
+.modal-footer > :not(:last-child) {
+    margin-left: .25rem;
+}
+/*////////////// End Admin Css /////////////////*/

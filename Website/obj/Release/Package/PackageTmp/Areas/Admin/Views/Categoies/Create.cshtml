@@ -1,0 +1,85 @@
+﻿@model App.VM.CategoryVM
+@using App.Static.Resources
+@{
+    bool res = Model == null ? true : false;
+    int sort = ViewBag.sort == null? 0 : (int)ViewBag.sort;
+    Layout = null;
+}
+
+<form id="form">
+    @Html.HiddenFor(x => x.Id)
+    <div class="row" id="test">
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.ArName, new { @class = "form-control", required = true, placeholder = Resource.ArName })
+                @Html.ValidationMessageFor(model => model.ArName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.EnName, new { @class = "form-control", required = true, placeholder = Resource.EnName })
+                @Html.ValidationMessageFor(model => model.EnName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.TextAreaFor(m => m.ArContent, new { @class = "form-control", required = true, placeholder = Resource.ArName })
+                @Html.ValidationMessageFor(model => model.ArContent, "", new { @class = "text-danger" })
+                <script>CKEDITOR.replace('ArContent');</script>
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <div class="col-12">
+                @Html.TextAreaFor(m => m.EnContent, new { @class = "form-control", required = true, placeholder = Resource.ArName })
+                @Html.ValidationMessageFor(model => model.EnContent, "", new { @class = "text-danger" })
+                <script>CKEDITOR.replace('EnContent');</script>
+            </div>
+        </div>
+        <div class="form-group col-8">
+            <div class="col-12">
+                @Html.DropDownList("categoryId", new SelectList(ViewBag.Categories, "Id", "Name"), Resource.ChooseDrop, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group col-4">
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Sort, new { @class = "form-control", required = true, placeholder = Resource.Sort, autocomplete = "off" })
+                <span id="Sort-error" style="display:none;" class = "text-danger">@Resource.sortIsExist</span>
+                @*@Html.EditorFor(m => m.Sort, new { HtmlAttributes = new { @class = "form-control", required = true, placeholder = Resource.Sort } })*@
+                @Html.ValidationMessageFor(model => model.Sort, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <footer class="modal-footer justify-content-center border-0">
+        <button type="submit" class="btn btn-primary " id="saveBtn">@Resource.SaveBTN</button>
+        <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+    </footer>
+</form>
+
+<script>
+    $('#Sort').change(function () {
+        let val = $(this).val(),
+            url = $(this).attr('data-val-remote-url')
+            id = isNaN(parseInt($('#Id').val())) ? 0 : parseInt($('#Id').val());
+
+        IsSortExist(val, url, id);
+    })
+
+    if(@sort != 0)
+        $("#Sort").val(@sort)
+
+    if ('@res' == 'True') {
+        CKEDITOR.instances.ArContent.setData("@Resource.ArContent");
+        CKEDITOR.instances.EnContent.setData("@Resource.EnContent");
+    }
+
+    //$("#categoryId option:first-child").attr('disabled',"disabled")
+    $("#saveBtn").click(function (e) {
+        e.preventDefault();
+        if ($("#form").valid()) {
+            if ($('#Sort-error').is(":visible "))
+                toastr.error('@Resource.sortIsExist', "", { timeOut: 4000 });
+            else
+                Save();
+        }
+    });
+</script>

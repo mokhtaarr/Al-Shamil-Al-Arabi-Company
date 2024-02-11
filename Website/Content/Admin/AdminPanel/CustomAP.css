@@ -1,0 +1,34 @@
+.content {
+    z-index: unset;
+}
+table.dataTable {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+table.dataTable td, table.dataTable th {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    width: 100px !important;
+}
+table.dataTable td:first-child, table.dataTable th:first-child{
+    width: 18px !important;
+}
+
+.spinnerBeforSendingBK {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #00000045;
+    text-align: center;
+    z-index: 1111;
+}
+div#spinnerBeforSending {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 17%;
+}
+.Custom_modal {
+    width: 75rem;
+}

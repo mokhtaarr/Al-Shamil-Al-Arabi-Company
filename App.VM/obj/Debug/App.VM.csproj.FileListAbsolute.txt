@@ -1,0 +1,84 @@
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.VM.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.VM.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.Static.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\System.Web.Mvc.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.Owin.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\EntityFramework.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\Owin.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.dll.config
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\App.Static.pdb
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\System.Web.Mvc.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\EntityFramework.xml
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\bin\Debug\ar\App.Static.resources.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csprojAssemblyReference.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.CoreCompileInputs.cache
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.CopyComplete
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.dll
+D:\Course\Programming\my work\last projects\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.VM.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.VM.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Static.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\System.Web.Mvc.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.Owin.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\EntityFramework.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Owin.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.dll.config
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Static.pdb
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\System.Web.Mvc.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\EntityFramework.xml
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\ar\App.Static.resources.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.AssemblyReference.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.CoreCompileInputs.cache
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.CopyComplete
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.dll
+E:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.VM.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.VM.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Static.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\System.Web.Mvc.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.Owin.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\EntityFramework.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\Owin.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Dal.dll.config
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\App.Static.pdb
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\System.Web.Mvc.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\EntityFramework.xml
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\bin\Debug\ar\App.Static.resources.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.AssemblyReference.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.CoreCompileInputs.cache
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.csproj.CopyComplete
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.dll
+F:\Course\Programming\my work\last projects\SoftGo\Website\MostafaMahmoud\Website\App.VM\obj\Debug\App.VM.pdb
+D:\website 2\Website\App.VM\bin\Debug\App.VM.dll
+D:\website 2\Website\App.VM\bin\Debug\App.VM.pdb
+D:\website 2\Website\App.VM\bin\Debug\App.Dal.dll
+D:\website 2\Website\App.VM\bin\Debug\App.Static.dll
+D:\website 2\Website\App.VM\bin\Debug\System.Web.Mvc.dll
+D:\website 2\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\website 2\Website\App.VM\bin\Debug\Microsoft.Owin.dll
+D:\website 2\Website\App.VM\bin\Debug\EntityFramework.dll
+D:\website 2\Website\App.VM\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\website 2\Website\App.VM\bin\Debug\Owin.dll
+D:\website 2\Website\App.VM\bin\Debug\App.Dal.pdb
+D:\website 2\Website\App.VM\bin\Debug\App.Dal.dll.config
+D:\website 2\Website\App.VM\bin\Debug\App.Static.pdb
+D:\website 2\Website\App.VM\bin\Debug\System.Web.Mvc.xml
+D:\website 2\Website\App.VM\bin\Debug\EntityFramework.xml
+D:\website 2\Website\App.VM\bin\Debug\ar\App.Static.resources.dll
+D:\website 2\Website\App.VM\obj\Debug\App.VM.csproj.AssemblyReference.cache
+D:\website 2\Website\App.VM\obj\Debug\App.VM.csproj.CoreCompileInputs.cache
+D:\website 2\Website\App.VM\obj\Debug\App.VM.csproj.CopyComplete
+D:\website 2\Website\App.VM\obj\Debug\App.VM.dll
+D:\website 2\Website\App.VM\obj\Debug\App.VM.pdb

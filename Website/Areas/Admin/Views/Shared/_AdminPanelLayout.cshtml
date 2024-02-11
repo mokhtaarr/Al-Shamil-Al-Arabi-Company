@@ -1,0 +1,370 @@
+﻿@using System.Globalization
+@using System.Threading;
+@using Microsoft.AspNet.Identity
+@using App.Static.Resources
+@using System.Configuration;
+
+@{
+    CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+    var cookie = Request.Cookies["Logo"];
+    string Logo = cookie != null ? cookie.Value : "";
+    string path = ConfigurationManager.AppSettings["LocalPath"] + "/";
+
+    var name = Request.Cookies["userName"];
+    string userName = name != null ? name.Value : "";
+    char userNameFirst = new char();
+    if (userName != "")
+    {
+        userNameFirst = userName.First();
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@Resource.AppName - @ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="icon" href="~/Images/images/@Logo" sizes="32x32" />
+    <link rel="icon" href="~/Images/images/@Logo" sizes="192x192" />
+    <link rel="apple-touch-icon" href="~/Images/images/@Logo" />
+    <meta name="msapplication-TileImage" content="~/Images/images/@Logo" />
+    @Styles.Render("~/Content/AdminPanel/css")
+    @RenderSection("styles", required: false)
+    <script src="~/Themes/ckeditor/ckeditor.js"></script>
+    <script src="~/Themes/ckfinder/ckfinder.js"></script>
+    @if (!System.Threading.Thread.CurrentThread.CurrentCulture.NativeName.Contains("English"))
+    {
+        <link href="~/Content/Portal/assets/css/styleAr.css" rel="stylesheet" />
+    }
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+
+    <!-- Header -->
+    <header class="header bg-body">
+        <nav class="navbar flex-nowrap p-0">
+            <div class="navbar-brand-wrapper d-flex align-items-center col-auto">
+                <!-- Logo For Mobile View -->
+                <a class="navbar-brand navbar-brand-mobile" href="/">
+                    <img class="img-fluid w-100" src="~/Images/images/@Logo" alt="Logo">
+                </a>
+                <!-- End Logo For Mobile View -->
+                <!-- Logo For Desktop View -->
+                <a class="navbar-brand navbar-brand-desktop" href="/">
+                    <img class="side-nav-show-on-closed" src="~/Images/images/@Logo" alt="Logo" style="width: auto; height: 33px;">
+                    <img class="side-nav-hide-on-closed" src="~/Images/images/@Logo" alt="Logo" style="width: auto; height: 33px;">
+                </a>
+                <!-- End Logo For Desktop View -->
+            </div>
+
+            <div class="header-content col px-md-3">
+                <div class="d-flex align-items-center">
+                    <!-- Side Nav Toggle -->
+                    <a class="js-side-nav header-invoker d-flex mr-md-2" href="#"
+                       data-close-invoker="#sidebarClose"
+                       data-target="#sidebar"
+                       data-target-wrapper="body">
+                        <i class="gd-align-left"></i>
+                    </a>
+                    <!-- End Side Nav Toggle -->
+                    <!-- User Notifications -->
+                    <div class="dropdown ml-auto">
+                    </div>
+                    <!-- End User Notifications -->
+                    <!-- User Avatar -->
+                    <div class="dropdown mx-3 dropdown ml-2">
+                        <a id="profileMenuInvoker" class="header-complex-invoker" href="#" aria-controls="profileMenu" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#profileMenu" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-animation-in="fadeIn" data-unfold-animation-out="fadeOut">
+                            <!--img class="avatar rounded-circle mr-md-2" src="#" alt="John Doe"-->
+                            <span class="mr-md-2 avatar-placeholder">@userNameFirst</span>
+                            <span class="d-none d-md-block">@userName</span>
+                            <i class="gd-angle-down d-none d-md-block ml-2"></i>
+                        </a>
+
+                        <ul id="profileMenu" class="unfold unfold-user unfold-light unfold-top unfold-centered position-absolute pt-2 pb-1 mt-4 unfold-css-animation unfold-hidden fadeOut" aria-labelledby="profileMenuInvoker" style="animation-duration: 300ms;">
+                            <li class="unfold-item">
+                                <a class="unfold-link d-flex align-items-center text-nowrap" href="@Url.Action("ChangePassword", "Account", new { area="Admin"})">
+                                    <span class="unfold-item-icon mr-3">
+                                        <i class="gd-settings"></i>
+                                    </span>
+                                    @Resource.ChangePass
+                                </a>
+                            </li>
+                            <li class="unfold-item unfold-item-has-divider">
+                                <a onclick="Logout()" class="unfold-link d-flex align-items-center text-nowrap" href="#">
+                                    <span class="unfold-item-icon mr-3">
+                                        <i class="gd-power-off"></i>
+                                    </span>
+                                    @Resource.SignOut
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End User Avatar -->
+
+                    <div class="dropdown mx-3 dropdown ml-2">
+                        <a id="Language" class="header-complex-invoker" href="#" aria-controls="LanguageAria" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#LanguageAria" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-animation-in="fadeIn" data-unfold-animation-out="fadeOut">
+                            <span class="d-none d-md-block LanguageText"></span>
+                            <i class="gd-angle-down d-none d-md-block ml-2"></i>
+                        </a>
+
+                        <ul id="LanguageAria" class="unfold unfold-user unfold-light unfold-top unfold-centered position-absolute pt-2 pb-1 mt-4 unfold-css-animation unfold-hidden fadeOut" aria-labelledby="Language" style="animation-duration: 300ms;">
+                            <li class="unfold-item" data-id="ar-eg">
+                                <a id="ar-eg" class="unfold-link d-flex align-items-center text-nowrap" href="javascript:void(0)">
+                                    العربية
+                                </a>
+                            </li>
+                            <li class="unfold-item unfold-item-has-divider" data-id="EN">
+                                <a id="EN" class="unfold-link d-flex align-items-center text-nowrap" href="javascript:void(0)">
+                                    English
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <main class="main">
+        <div class="spinnerBeforSendingBK">
+            <div id="spinnerBeforSending" class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Sidebar Nav -->
+        <aside id="sidebar" class="js-custom-scroll side-nav">
+            <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+                <!-- Title -->
+                <li class="sidebar-heading h6">@*Dashboard*@</li>
+                <!-- End Title -->
+                <!-- Home -->
+                <li class="side-nav-menu-item side-nav-has-menu">
+                    <a class="side-nav-menu-link media align-items-center" href="#"
+                       data-target="#subUsers">
+                        <span class="side-nav-menu-icon d-flex mr-3">
+                            <i class="gd-user"></i>
+                        </span>
+                        <span class="side-nav-fadeout-on-closed media-body">@Resource.HomeAp</span>
+                        <span class="side-nav-control-icon d-flex">
+                            <i class="gd-angle-right side-nav-fadeout-on-closed"></i>
+                        </span>
+                        <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+                    </a>
+                    <!-- Home: subHome -->
+                    <ul id="subUsers" class="side-nav-menu side-nav-menu-second-level mb-0">
+                        <li class="side-nav-menu-item" id="CompanyWord">
+                            <a class="side-nav-menu-link" onclick="activeTabe('CompanyWord')" href="@Url.Action("Index","CompanyWord", new { area = "Admin"})">@Resource.CompanyWord</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="LogosTechnology">
+                            <a class="side-nav-menu-link" onclick="activeTabe('LogosTechnology')" href="@Url.Action("Index","LogosTechnology", new { area = "Admin"})">@Resource.LogosTechnology</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="One">
+                            <a class="side-nav-menu-link" onclick="activeTabe('One')" href="@Url.Action("Index","AboutUS", new { area = "Admin"})">@Resource.About</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="Two">
+                            <a class="side-nav-menu-link" onclick="activeTabe('Two')" href="@Url.Action("Index","Services", new { area = "Admin"})">@Resource.ServicesAp</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="Three">
+                            <a class="side-nav-menu-link" onclick="activeTabe('Three')" href="@Url.Action("Index","SubServices", new { area = "Admin"})">@Resource.SubServices</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="Features">
+                            <a class="side-nav-menu-link" onclick="activeTabe('Features')" href="@Url.Action("Index","Features", new { area = "Admin"})">@Resource.FeaturesAp</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="SubFeatures">
+                            <a class="side-nav-menu-link" onclick="activeTabe('SubFeatures')" href="@Url.Action("Index","SubFeatures", new { area = "Admin"})">@Resource.SubFeatures</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="Portfolio">
+                            <a class="side-nav-menu-link" onclick="activeTabe('Portfolio')" href="@Url.Action("Index","Portfolio", new { area = "Admin"})">@Resource.PORTFOLIO</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="PortfolioTypes">
+                            <a class="side-nav-menu-link" onclick="activeTabe('PortfolioTypes')" href="@Url.Action("Index","PortfolioTypes", new { area = "Admin"})">@Resource.PortfolioTypes</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="SubPortfolios">
+                            <a class="side-nav-menu-link" onclick="activeTabe('SubPortfolios')" href="@Url.Action("Index","SubPortfolios", new { area = "Admin"})">@Resource.SubPortfolios</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="Team">
+                            <a class="side-nav-menu-link" onclick="activeTabe('Team')" href="@Url.Action("Index","Team", new { area = "Admin"})">@Resource.TEAM</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="TeamMembers">
+                            <a class="side-nav-menu-link" onclick="activeTabe('TeamMembers')" href="@Url.Action("Index","TeamMembers", new { area = "Admin"})">@Resource.TeamMembers</a>
+                        </li>
+                        <li class="side-nav-menu-item" id="ContactUs">
+                            <a class="side-nav-menu-link" onclick="activeTabe('ContactUs')" href="@Url.Action("Index","ContactUs", new { area = "Admin"})">@Resource.ContactUs</a>
+                        </li>
+                    </ul>
+                    <!-- End Home: subHome -->
+                </li>
+                <!-- End Home -->
+                <!-- Other Pages -->
+                <li class="side-nav-menu-item side-nav-has-menu">
+                    <a class="side-nav-menu-link media align-items-center" href="#"
+                       data-target="#subPages">
+                        <span class="side-nav-menu-icon d-flex mr-3">
+                            <i class="gd-file"></i>
+                        </span>
+                        <span class="side-nav-fadeout-on-closed media-body">@Resource.OtherPages</span>
+                        <span class="side-nav-control-icon d-flex">
+                            <i class="gd-angle-right side-nav-fadeout-on-closed"></i>
+                        </span>
+                        <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+                    </a>
+
+                    <!-- Pages: subPages -->
+                    <ul id="subPages" class="side-nav-menu side-nav-menu-second-level mb-0">
+                        <li class="side-nav-menu-item" id="Categoies">
+                            <a class="side-nav-menu-link" onclick="activeTabe('Categoies')" href="@Url.Action("Index","Categoies", new { area = "Admin"})">@Resource.Categoies</a>
+                        </li>
+                    </ul>
+                    <!-- End Pages: subPages -->
+                </li>
+                <!-- End Other Pages -->
+            </ul>
+        </aside>
+        <!-- End Sidebar Nav -->
+
+        <div class="content">
+            <div class="py-4 px-3 px-md-4">
+
+                <div class="mb-3 mb-md-4 d-flex justify-content-between">
+                    @*<div class="h3 mb-0">Dashboard</div>*@
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-3 mb-md-4">
+                            <div class="card-header">
+                                @*<h5 class="font-weight-semi-bold mb-0">Recent Orders</h5>*@
+                                <button class="btn btn-primary float-right" id="AddNew">@Resource.Add</button>
+                            </div>
+
+                            <div class="card-body pt-0">
+                                <div class="table-responsive-xl" style=" overflow-x: scroll;min-height: 300px;">
+                                    <!-- Modal For Preview Images -->
+                                    <div id="PreviewImages" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg Custom_modal rounded" role="document">
+                                            <div class="modal-content">
+                                                <header class="modal-header flex-column justify-content-center border-0 mb-0">
+                                                    <h4 class="modal-title m-auto">@Resource.Images</h4>
+                                                </header>
+                                                <div class="modal-body pt-3 text-center justify-content-center row" id="PreviewImagesContent"></div>
+                                            </div>
+                                            <footer class="modal-footer justify-content-center border-0">
+                                                <button type="button" class="text-dark btn btn-light" data-dismiss="modal">@Resource.Close</button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
+                                    @RenderBody()
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="small p-3 px-md-4 mt-auto">
+                <div class="row justify-content-between">
+                    <div class="col-lg text-center">
+                        Copyright &copy; @(DateTime.Now.Year) All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+        </div>
+    </main>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/AdminPanel")
+    <script src="~/Scripts/jquery.cookie-1.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    @*<script>
+        $.GDCore.components.GDChartistArea.init('.js-area-chart');
+        $.GDCore.components.GDChartistBar.init('.js-bar-chart');
+        $.GDCore.components.GDChartistDonut.init('.js-donut-chart');
+    </script>*@
+    <script>
+        function _GetLanguage() {
+            var Language = $.cookie('Language');
+            if (Language == undefined) {
+                return "ar-eg";
+            }
+            else {
+                return Language;
+            }
+        }
+
+        $("#LanguageAria li").click(function () {
+            $.ajax({
+                url: "@(Url.Action("ChangeLanguage", "Language", new { area=""}))",
+                type: "post",
+                data: { SelectedLanguage: $(this).attr("data-id") },
+                success: function (data) {
+                    location.reload();
+                }
+            });
+        });
+
+        $(".LanguageText").text($("#" + _GetLanguage()).text());
+
+        function Logout() {
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("LogOut", "Account", new { area = "Admin" })",
+                success: function (response) {
+                    if (response) {
+                        location.href = "@Url.Action("Index", "Home", new { area = "Portal" })";
+                    }
+                    else {
+                        alert("");
+                    }
+                }
+            });
+        }
+
+        function activeTabe(val) {
+            localStorage.setItem('minuItem', val)
+        }
+
+        let id = localStorage.getItem('minuItem') == null ? "Categoies" : localStorage.getItem('minuItem');
+
+        if (id != null) {
+            $('#' + id).addClass('active');
+            $('#' + id).parent()[0].style.display = "block";
+            $('#' + id).parent().parent().addClass('side-nav-opened');
+        }
+
+        $(document).ready(function () {
+            $('.spinnerBeforSendingBK').hide()
+            $(document).ajaxStart(function () {
+                $(".spinnerBeforSendingBK").show();
+            });
+            $(document).ajaxComplete(function () {
+                $(".spinnerBeforSendingBK").hide();
+            });
+        });
+        function PreviewImages(val) {
+            $("#PreviewImagesContent").html('');
+            let string = val.split(',').length > 1 ? val.slice(0, -1) : val,
+                stringArr = string.split(','),
+                newArr = [];
+
+            for (var i = 0; i < stringArr.length; i++) {
+                newArr.push(stringArr[i].replace(' ', ''));
+            }
+            for (var i = 0; i < newArr.length; i++) {
+                $(`<div class="pip col-3"><img class="imageThumb" src="@path${newArr[i]}" title="Image${i}" /> </div>`).appendTo("#PreviewImagesContent");
+            }
+            $("#PreviewImages").modal('show');
+        }
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

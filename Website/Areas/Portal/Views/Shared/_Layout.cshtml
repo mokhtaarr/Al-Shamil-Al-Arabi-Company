@@ -1,0 +1,145 @@
+﻿@using App.Static.Resources
+@{
+    var cookie = Request.Cookies["Logo"];
+    string Logo = cookie != null ? cookie.Value : "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <title>@Resource.AppName - @ViewBag.Title</title>
+    <!-- Favicon -->
+    <link rel="icon" href="~/Images/images/@Logo" sizes="32x32" />
+    <link rel="icon" href="~/Images/images/@Logo" sizes="192x192" />
+    <link rel="apple-touch-icon" href="~/Images/images/@Logo" />
+    <meta name="msapplication-TileImage" content="~/Images/images/@Logo" />
+
+    @Styles.Render("~/Content/PortalStyle")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @if (!System.Threading.Thread.CurrentThread.CurrentCulture.NativeName.Contains("English"))
+    {
+        <link href="~/Content/Portal/assets/css/styleAr.css" rel="stylesheet" />
+    }
+    <link href="~/Content/Admin/toastr/toastr.min.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+
+</head>
+<body>
+    @{
+        Html.RenderAction("Header", "PartialLayout", new { area = "Portal" });
+    }
+
+    <main id="main">
+        @RenderBody()
+        <div>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-b3ef1717-a95d-4f3a-b7c0-6ced020e26a2" data-elfsight-app-lazy></div>
+        </div>
+    </main><!-- End #main -->
+
+    @{
+        Html.RenderAction("Footer", "PartialLayout", new { area = "Portal" });
+    }
+
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/Content/PortalScript")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Content/Admin/toastr/toastr.min.js"></script>
+    @RenderSection("scripts", required: false)
+    <script>
+        function _GetLanguage() {
+            var Language = $.cookie('Language');
+            if (Language == undefined) {
+                return "ar-eg";
+            }
+            else {
+                return Language;
+            }
+        }
+
+        $("#LanguageMenue li").click(function () {
+            $.ajax({
+                url: "@(Url.Action("ChangeLanguage", "Language", new { area=""}))",
+                type: "post",
+                data: { SelectedLanguage: $(this).attr("id") },
+                success: function (data) {
+                    location.reload();
+                }
+            });
+        });
+
+        $("#Language").text($("#" + _GetLanguage()).text());
+
+        //////////////// CKEditor Plugin ///////////////////////
+
+        $("#subscribedForm").submit(function (e) {
+            e.preventDefault();
+            let val = $("#EmailSubscribed").val();
+            if ($(this).valid() == true && val != "") {
+                $.ajax({
+                    type: "post",
+                    data: { email: val },
+                    url: "@Url.Action("Subscribe", "ContactUs", new { area= "Admin" })",
+                    success: function (rs) {
+                        toastr.success("@Resource.SubscribedSucce", '', { timeOut: 4000 });
+                        $("#EmailSubscribed").val('');
+                    }
+                })
+            }
+        });
+    </script>
+    <!-- GetButton.io widget -->
+    <!--<script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+00201012876726", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                position: "left", // Position may be 'right' or 'left'
+                pre_filled_message: "call us pleasse", // WhatsApp pre-filled message
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>-->
+    <!-- /GetButton.io widget -->
+    <!-- GetButton.io widget -->
+    <!--<script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+00201012876726", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                position: "left", // Position may be 'right' or 'left'
+                pre_filled_message: "call us", // WhatsApp pre-filled message
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>-->
+    <!-- /GetButton.io widget -->
+
+
+    <!-- Chatra {literal} -->
+    @*<script>
+        (function (d, w, c) {
+            w.ChatraID = 'ESsvF8i3HYFyPmiki';
+            var s = d.createElement('script');
+            w[c] = w[c] || function () {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>*@
+    <!-- /Chatra {/literal} -->
+</body>
+</html>

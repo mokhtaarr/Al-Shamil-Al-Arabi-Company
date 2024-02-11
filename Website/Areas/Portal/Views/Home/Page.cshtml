@@ -1,0 +1,42 @@
+﻿@model App.VM.CategoryVM
+@using App.Static.Resources
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+
+}
+
+<!-- ======= Breadcrumbs Section ======= -->
+<!--<section class="breadcrumbs">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Inner Page</h2>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li>Inner Page</li>
+            </ol>
+        </div>
+
+    </div>
+</section>--><!-- End Breadcrumbs Section -->
+
+<section class="inner-page">
+    <div class="container">
+        <h2 class="text-center mb-5">@Model.Name</h2>
+        @foreach (var item in Model.CategoryCnotent)
+        {
+            @Html.Raw(item.ArContent)
+            <br />
+            if (Model.CategoryCnotent.Count() > 1)
+            {
+                <br />
+                <hr class="col-12" />
+            }
+        }
+    </div>
+</section>
+
